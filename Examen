@@ -1,0 +1,70 @@
+-------------------------------------
+IMAGEN CON VIRUS
+-------------------------------------
+
+Import-Module C:\Users\avpal\Downloads\Powershell\Invoke-PSImage.ps1
+Invoke-PSImage -Script  C:\Users\avpal\Downloads\powershell\Invoke-PSImage.ps1 -Out  C:\Users\avpal\Pictures\Lightroom\2.jpg  -Image   C:\Users\avpal\Pictures\3.jpg 
+-------------------------------------
+USER AGENT
+-------------------------------------
+<?php
+echo $_SERVER['HTTP_USER_AGENT'] . "\n\n";
+
+$navegador = get_browser(null, true);
+print_r($navegador);
+?>
+-------------------------------------
+ | SABER PROPIETARIO DEL SCRIPT ACTUAL |
+-------------------------------------
+
+<?php
+    echo get_current_user();
+?>
+-------------------------------------
+  | COOKIES |
+-------------------------------------
+<?php
+    print_r($_COOKIE);
+?>
+-------------------------------------
+| ver la ip medinate php |
+-------------------------------------
+<?php
+echo $_SERVER['REMOTE_ADDR'];
+?>
+-------------------------------------
+
+<?php 
+echo "El nombre del servidor es: {$_SERVER['SERVER_NAME']}<hr>"; 
+echo "Vienes procedente de la página: {$_SERVER['HTTP_REFERER']}<hr>"; 
+echo "Te has conectado usando el puerto: {$_SERVER['REMOTE_PORT']}<hr>"; 
+echo "El agente de usuario de tu navegador es: {$_SERVER['HTTP_USER_AGENT']}";
+?>
+-------------------------------------
+<?php
+echo <<<END
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<title>\$_SERVER</title>
+<style>
+    table {
+        border-collapse: collapse;
+    }
+    td {
+        border: 1px solid #999;
+        padding: 3px;
+    }
+</style>
+<table>
+END;
+foreach ($_SERVER as $k => $v) {
+    $key = htmlentities($k);
+    $value = htmlentities($v);
+    echo "\n\t<tr>\n\t\t<td>$key\n\t\t<td>$value\n";
+}
+echo "</table>";
+?>
+
+-------------------------------------
+
+
