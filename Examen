@@ -5,6 +5,24 @@ IMAGEN CON VIRUS
 Import-Module C:\Users\avpal\Downloads\Powershell\Invoke-PSImage.ps1
 Invoke-PSImage -Script  C:\Users\avpal\Downloads\powershell\Invoke-PSImage.ps1 -Out  C:\Users\avpal\Pictures\Lightroom\2.jpg  -Image   C:\Users\avpal\Pictures\3.jpg 
 -------------------------------------
+FORMULARIO
+-------------------------------------
+
+<form action="method.php" method="get">
+	<h1>Introduzca nombre de la usuario</h1>
+	<br>
+    Usuario: <input type="text" name="sesion" />
+	<br />
+	<br>
+	<h1>Introduce la ruta de la imagen que quieres subir</h1>
+	<br>
+    Ruta: <input type="text" name="nombre" />
+	<br />
+	<br>
+    <input type="submit" name="submit" value="Enviar" />
+</form>
+-------------------------------------
+
 USER AGENT
 -------------------------------------
 <?php
